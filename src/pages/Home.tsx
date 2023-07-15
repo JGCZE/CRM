@@ -46,14 +46,14 @@ const Home = () => {
 
             <div className="one-client">
                 <div className="information">
-                    <p>Jméno a příjmení</p>
-                    <p>Rank</p>
+                    <p className="name">Jméno a příjmení</p>
+                    <p className="rank">Rank</p>
                     {/* <p>Datum schůzky</p> */}
                     <p>Telefon</p>
                     <p>E - mail</p>
-                    <p>Produkt</p>
+                    <p className="product">Produkt</p>
                     {/* <p>Datum uzavření</p> */}
-                    <p>Cena</p>
+                    <p className="price">Cena</p>
                 </div>
                 
                 {
@@ -61,14 +61,17 @@ const Home = () => {
                        const { id, rank, telefon, name, price, email, productName } = oneClient
                        return(
                            <div key={index} className="one-client-atribute">
+                            <div>
                                <Link to={`/one-client/${id}`}>
                                     <p>{name}</p>
                                </Link>
-                               <p>{rank}</p>
+                            </div>
+                            
+                               <p className="rank">{rank}</p>
                                <p>{telefon}</p>
                                <p>{email}</p>
-                               <p>{productName}</p>
-                               <p>{price}</p>                       
+                               <p className="product">{productName}</p>
+                               <p className="price">{price}</p>                       
                            </div>
                        )
                     })

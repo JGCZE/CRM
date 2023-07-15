@@ -95,3 +95,96 @@ body {
     width: 250px;
 }
 
+/* RESPONSIVE */
+
+@media (max-width: 1120px) {
+
+    .Home {
+        width: 99%;
+    }
+
+    .search-input {
+        width: 40%;
+    }
+
+    .rank {
+        width: 30px;
+    }
+
+}
+
+@media (max-width: 1000px) {
+
+    .Home {
+        width: 99%;
+    }
+
+    .search-input {
+        width: 40%;
+    }
+
+    .information .rank {
+        display: none;
+    }
+
+    .one-client-atribute .rank {
+        display: none;
+    }
+
+}
+
+@media (max-width: 850px) {
+
+
+    .search-input {
+        width: 60%;
+    }
+
+}
+
+@media (max-width: 812px){
+    .one-client .product {
+        display: none;
+    }
+
+    .one-client .price {
+        display: none;
+    }
+
+    .information p {
+        width: 30%;
+    }
+
+    .one-client-atribute p {
+        width: 30%;
+    }
+}
+
+@media (max-width: 580px){
+
+    .one-client a p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+    }
+
+    .one-client-atribute {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 534px){
+    .information p {
+        width: 33%;
+    }
+
+    .one-client-atribute p{
+        width: 33%;
+    }
+    
+    *{
+        font-size: 12px;
+    }
+}
