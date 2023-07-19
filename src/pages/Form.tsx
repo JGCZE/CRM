@@ -50,7 +50,7 @@ const Form = () => {
             setPrice("")
            
         } catch (error){
-            console.log(error.message);
+            console.log(error);
         }
     }
 
